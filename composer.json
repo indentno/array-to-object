@@ -1,0 +1,45 @@
+{
+  "name": "sempro/array-to-object",
+  "description": "Convert an array to an object",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sempro as",
+      "email": "admin@sempro.no"
+    },
+    {
+      "name": "Runar Jørgensen",
+      "email": "runar@sempro.no"
+    },
+    {
+      "name": "Smajo Husic",
+      "email": "smajo@sempro.no"
+    }
+  ],
+  "require": {
+    "illuminate/contracts": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sempro\\ArrayToObject\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sempro\\ArrayToObject\\Tests\\": "tests/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
